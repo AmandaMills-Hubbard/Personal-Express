@@ -7,5 +7,5 @@
 
 ## Usage
 
-1. run `npm run personalExpress`
+1. run `node server.js`
 2. Navigate to `localhost:3000`
