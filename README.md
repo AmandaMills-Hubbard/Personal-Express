@@ -1,4 +1,6 @@
-Fashon board app
+![21 Savage](public/21savage.jpg)
+
+## Installation
 
 1. Clone repo
 2. run `npm install`

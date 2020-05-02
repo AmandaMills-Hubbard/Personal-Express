@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashon Board</title>
+  <link rel="shortcut icon" href="purse.png">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Fashon Board</h1>
+  <h2>Save pics of your fav style so you never forget!</h2>
+
+
+  <h3>Your Styles</h3>
+  <ul class="pics">
+  <% for(var i=0; i<board.length; i++) {%>
+    <li class="pic">
+      <span><%= board[i].name %></span>
+      <img class="image" src="<%= board[i].pic %>" alt="Your picture">
+      <span><%= board[i].heart %></span>
+      <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+      <!-- <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span> -->
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <h2>Add a style</h2>
+
+  <form action="/postpicture" method="POST">
+    <input type="text" placeholder="username" name="name">
+    <input type="url" placeholder="add Image URL" name="pic">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
