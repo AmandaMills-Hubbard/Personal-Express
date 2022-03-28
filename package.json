@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.10",
-    "minimist": ">=1.2.2"
+    "minimist": ">=1.2.6"
   }
 }
